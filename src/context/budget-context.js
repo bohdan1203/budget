@@ -27,7 +27,7 @@ export const BudgetProvider = (props) => {
           }, 0)
         : 0;
 
-    setBalance(newBalance);
+    setBalance(Math.round(newBalance * 100) / 100);
 
     localStorage.setItem("operations", JSON.stringify(operations));
   }, [operations]);
@@ -37,15 +37,35 @@ export const BudgetProvider = (props) => {
     balance,
 
     addNewOperation: (newOperation) => {
-      setOperations((prevOperations) => {
+      setOperations((previousOperations) => {
         return [
-          ...prevOperations,
+          ...previousOperations,
           {
             ...newOperation,
             id: uuidv4(),
             date: newOperation.date || new Date().toISOString().slice(0, 10),
           },
         ];
+      });
+    },
+
+    editOperation: (editedOperation) => {
+      setOperations((previousOperations) => {
+        return [...previousOperations].map((operation) => {
+          if (operation.id === editedOperation.id) {
+            return editedOperation;
+          } else {
+            return operation;
+          }
+        });
+      });
+    },
+
+    deleteOperation: (id) => {
+      setOperations((previousOperations) => {
+        return [...previousOperations].filter(
+          (operation) => operation.id !== id
+        );
       });
     },
   };

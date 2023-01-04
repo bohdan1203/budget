@@ -13,6 +13,7 @@ const Input = (props) => {
     checked,
     placeholder,
     required,
+    min = "0.01",
     step = "0.01",
     onChange,
   } = props;
@@ -34,6 +35,7 @@ const Input = (props) => {
         value={value}
         placeholder={placeholder}
         required={required}
+        min={min}
         step={step}
         checked={checked}
         onChange={onChange}

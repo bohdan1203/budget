@@ -8,6 +8,7 @@ const Textarea = (props) => {
     id,
     label,
     placeholder,
+    value,
     rows = 5,
     onChange,
     children,
@@ -26,6 +27,7 @@ const Textarea = (props) => {
         className={classes.textarea}
         id={id}
         placeholder={placeholder}
+        value={value}
         rows={rows}
         onChange={onChange}
       >

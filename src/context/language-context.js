@@ -41,6 +41,8 @@ const ENGLISH = {
     newExpense: "New Expense",
     addIncome: "Add Income",
     addExpense: "Add Expense",
+    editIncome: "Edit Income",
+    editExpense: "Edit Expense",
   },
 
   tables: {
@@ -55,7 +57,7 @@ const ENGLISH = {
   },
 
   messages: {
-    deleteCategory: "Are you sure you want to delete this category?",
+    deleteCategory: "Are you sure?",
   },
 };
 
@@ -100,6 +102,8 @@ const UKRAINIAN = {
     newExpense: "Нова витрата",
     addIncome: "Додати дохід",
     addExpense: "Додати витрату",
+    editIncome: "Редагувати дохід",
+    editExpense: "Редагувати витрату",
   },
 
   tables: {
@@ -114,7 +118,7 @@ const UKRAINIAN = {
   },
 
   messages: {
-    deleteCategory: "Ви впевнені, що хочете видалити цю категорію?",
+    deleteCategory: "Ви впевнені?",
   },
 };
 

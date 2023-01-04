@@ -24,7 +24,7 @@ const TableHead = () => {
   );
 };
 
-const TableBody = () => {
+const TableBody = (props) => {
   const { textContents } = useContext(LanguageContext);
   const { operations } = useContext(BudgetContext);
 
@@ -45,7 +45,10 @@ const TableBody = () => {
             <td>{operation.description}</td>
             <td>{operation.date}</td>
             <td>
-              <Button textContent={textContents.buttons.edit} />
+              <Button
+                textContent={textContents.buttons.edit}
+                onClick={() => props.onEditOperation(operation)}
+              />
             </td>
           </tr>
         );
@@ -58,7 +61,7 @@ const OperationsTable = (props) => {
   return (
     <table className={classes.table}>
       <TableHead />
-      <TableBody />
+      <TableBody onEditOperation={props.onEditOperation} />
     </table>
   );
 };

@@ -1,11 +1,11 @@
 .table {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid black;
+  border: 2px solid royalblue;
 }
 
 .table tr:nth-child(even) {
-  background-color: #eee;
+  background-color: hsl(225, 73%, 90%);
 }
 
 .table th,
@@ -15,7 +15,7 @@
 }
 
 .table th {
-  background-color: black;
+  background-color: royalblue;
   color: white;
   padding: 1rem 0.5rem;
 }
