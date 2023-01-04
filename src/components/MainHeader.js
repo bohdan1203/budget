@@ -23,7 +23,7 @@ const Header = () => {
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? classes.active : "")}
-              to="/home"
+              to="/"
             >
               {textContents.mainHeader.home}
             </NavLink>

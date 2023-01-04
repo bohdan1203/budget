@@ -14,7 +14,7 @@ const App = () => {
       <MainHeader />
       <CategoriesProvider>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
       </CategoriesProvider>
