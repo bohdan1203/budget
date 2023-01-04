@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 import { LanguageContext } from "../context/language-context";
+import { BudgetContext } from "../context/budget-context";
 
 import Select from "../components/UI/Select";
 import Option from "../components/UI/Option";
@@ -11,6 +12,7 @@ import classes from "./MainHeader.module.css";
 
 const Header = () => {
   const { textContents, changeLanguage } = useContext(LanguageContext);
+  const budgetCtx = useContext(BudgetContext);
 
   function selectLanguageHandler(event) {
     changeLanguage(event.target.value);
@@ -49,7 +51,7 @@ const Header = () => {
       </Select>
 
       <div className={classes.balance}>
-        {textContents.mainHeader.balance}: 0
+        {textContents.mainHeader.balance}: {budgetCtx.balance}
       </div>
     </header>
   );

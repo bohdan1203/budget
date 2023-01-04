@@ -14,6 +14,8 @@ const ENGLISH = {
     newCategory: "New Category",
     editCategory: "Edit Category",
     confirmAction: "Confirm Action",
+    newIncome: "New Income",
+    newExpense: "New Expense",
   },
 
   labels: {
@@ -21,6 +23,10 @@ const ENGLISH = {
     income: "Income",
     expense: "Expense",
     categoryName: "Category Name",
+    category: "Category",
+    amount: "Amount",
+    date: "Date",
+    description: "Description",
   },
 
   buttons: {
@@ -31,6 +37,10 @@ const ENGLISH = {
     saveChanges: "Save Changes",
     deleteCategory: "Delete Category",
     delete: "Delete",
+    newIncome: "New Income",
+    newExpense: "New Expense",
+    addIncome: "Add Income",
+    addExpense: "Add Expense",
   },
 
   messages: {
@@ -52,6 +62,8 @@ const UKRAINIAN = {
     newCategory: "Нова категорія",
     editCategory: "Редагувати категорію",
     confirmAction: "Підтвердьте дію",
+    newIncome: "Новий дохід",
+    newExpense: "Нова витрата",
   },
 
   labels: {
@@ -59,6 +71,10 @@ const UKRAINIAN = {
     income: "Дохід",
     expense: "Витрата",
     categoryName: "Назва категорії",
+    category: "Категорія",
+    amount: "Сума",
+    date: "Дата",
+    description: "Опис",
   },
 
   buttons: {
@@ -69,6 +85,10 @@ const UKRAINIAN = {
     saveChanges: "Зберегти зміни",
     deleteCategory: "Видалити категорію",
     delete: "Видалити",
+    newIncome: "Новий дохід",
+    newExpense: "Нова витрата",
+    addIncome: "Додати дохід",
+    addExpense: "Додати витрату",
   },
 
   messages: {

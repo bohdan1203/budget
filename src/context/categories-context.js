@@ -31,7 +31,6 @@ export const CategoriesProvider = (props) => {
   );
 
   useEffect(() => {
-    console.log(categories);
     localStorage.setItem("categories", JSON.stringify(categories));
   }, [categories]);
 

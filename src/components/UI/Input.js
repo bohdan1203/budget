@@ -13,7 +13,7 @@ const Input = (props) => {
     checked,
     placeholder,
     required,
-    step,
+    step = "0.01",
     onChange,
   } = props;
 

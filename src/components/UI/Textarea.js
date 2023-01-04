@@ -1,40 +1,38 @@
 import React from "react";
 
-import classes from "./Select.module.css";
+import classes from "./Textarea.module.css";
 
-const Select = (props) => {
+const Textarea = (props) => {
   const {
     additionalClasses,
     id,
-    value = "",
     label,
-    required,
-    multiple,
+    placeholder,
+    rows = 5,
     onChange,
     children,
   } = props;
 
   return (
     <div
-      className={`${classes["select-block"]} ${
+      className={`${classes["textarea-block"]} ${
         additionalClasses ? additionalClasses : ""
       }`}
     >
       <label className={classes.label} htmlFor={id}>
         {label}
       </label>
-      <select
-        className={classes.select}
+      <textarea
+        className={classes.textarea}
         id={id}
-        value={value}
-        required={required}
-        multiple={multiple}
+        placeholder={placeholder}
+        rows={rows}
         onChange={onChange}
       >
         {children}
-      </select>
+      </textarea>
     </div>
   );
 };
 
-export default Select;
+export default Textarea;
