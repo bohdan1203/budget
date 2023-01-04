@@ -1,0 +1,21 @@
+.input-block {
+  margin: 1rem 0;
+}
+
+.label {
+  margin-right: 0.5rem;
+}
+
+.input {
+  padding: 0.25rem 0.5rem;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1rem;
+  transition: all 0.25s;
+}
+
+.input:focus {
+  background-color: black;
+  color: white;
+}

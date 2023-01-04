@@ -1,0 +1,12 @@
+.categories-list {
+  margin: 2rem;
+}
+
+.categories-list ul {
+  list-style: none;
+}
+
+.categories-list button {
+  font-size: 0.8rem;
+  margin: 0.2rem 0 0 0.5rem;
+}

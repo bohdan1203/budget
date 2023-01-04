@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import { CategoriesProvider } from "./context/categories-context";
+
+import Home from "./pages/Home";
+import Categories from "./pages/Categories";
+
+import MainHeader from "./components/MainHeader";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <MainHeader />
+      <CategoriesProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </CategoriesProvider>
+    </Fragment>
   );
-}
+};
 
 export default App;
