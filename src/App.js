@@ -17,7 +17,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
-        <div>Test</div>
       </CategoriesProvider>
     </Fragment>
   );
