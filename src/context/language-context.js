@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 const ENGLISH = {
   mainHeader: {
@@ -41,6 +41,17 @@ const ENGLISH = {
     newExpense: "New Expense",
     addIncome: "Add Income",
     addExpense: "Add Expense",
+  },
+
+  tables: {
+    type: "Type",
+    category: "Category",
+    amount: "Amount",
+    description: "Description",
+    date: "Date",
+    edit: "Edit",
+    income: "Income",
+    expense: "Expense",
   },
 
   messages: {
@@ -89,6 +100,17 @@ const UKRAINIAN = {
     newExpense: "Нова витрата",
     addIncome: "Додати дохід",
     addExpense: "Додати витрату",
+  },
+
+  tables: {
+    type: "Тип",
+    category: "Категорія",
+    amount: "Сума",
+    description: "Опис",
+    date: "Дата",
+    edit: "Редагувати",
+    income: "Дохід",
+    expense: "Витрата",
   },
 
   messages: {

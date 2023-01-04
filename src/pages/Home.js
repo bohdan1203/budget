@@ -6,6 +6,7 @@ import { BudgetContext } from "../context/budget-context";
 
 import Button from "../components/UI/Button";
 import CreateOperation from "../components/operations/CreateOperation";
+import OperationsTable from "../components/operations/OperationsTable";
 
 import classes from "./Home.module.css";
 
@@ -21,8 +22,6 @@ const Home = () => {
 
   return (
     <section className={classes.home}>
-      <h1>Home</h1>
-
       <Button
         textContent={textContents.buttons.newIncome}
         onClick={addNewOperation.bind(null, "incomes")}
@@ -31,6 +30,8 @@ const Home = () => {
         textContent={textContents.buttons.newExpense}
         onClick={addNewOperation.bind(null, "expenses")}
       />
+
+      <OperationsTable />
 
       {isAddType && (
         <CreateOperation

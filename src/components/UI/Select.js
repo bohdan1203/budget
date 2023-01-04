@@ -6,7 +6,7 @@ const Select = (props) => {
   const {
     additionalClasses,
     id,
-    value = "",
+    value,
     label,
     required,
     multiple,
