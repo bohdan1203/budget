@@ -1,3 +1,8 @@
+.table-wrapper {
+  position: relative;
+  overflow: auto;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -16,6 +21,11 @@
 
 .table th {
   background-color: royalblue;
-  color: white;
+  color: hsl(225, 73%, 90%);
   padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.table th:hover {
+  color: white;
 }

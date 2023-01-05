@@ -1,9 +1,21 @@
 .categories-list {
-  margin: 2rem;
+  margin: 0 4rem;
+  text-align: center;
 }
 
 .categories-list ul {
   list-style: none;
+  margin-top: 0.5rem;
+}
+
+.categories-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories-list li button {
+  margin-left: 2rem;
 }
 
 .categories-list button {

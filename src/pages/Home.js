@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 
+import { TableProvider } from "../context/table-context";
+
 import { LanguageContext } from "../context/language-context";
 import { CategoriesContext } from "../context/categories-context";
 import { BudgetContext } from "../context/budget-context";
@@ -39,7 +41,9 @@ const Home = () => {
         />
       </div>
 
-      <OperationsTable onEditOperation={setIsEditOperation} />
+      <TableProvider>
+        <OperationsTable onEditOperation={setIsEditOperation} />
+      </TableProvider>
 
       {isAddType && (
         <CreateOperation

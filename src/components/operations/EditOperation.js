@@ -45,7 +45,7 @@ const EditOperation = (props) => {
   function amountChangeHandler(event) {
     setEditedOperation((previosState) => ({
       ...previosState,
-      amount: +event.target.value,
+      amount: event.target.value && +event.target.value,
     }));
   }
 
@@ -105,7 +105,7 @@ const EditOperation = (props) => {
           type="number"
           id="amount"
           label={textContents.labels.amount}
-          value={editedOperation.amount}
+          value={editedOperation.amount.toString()}
           required
           onChange={amountChangeHandler}
         />
