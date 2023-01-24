@@ -43,6 +43,7 @@ const ENGLISH = {
     addExpense: "Add Expense",
     editIncome: "Edit Income",
     editExpense: "Edit Expense",
+    filterTable: "Filter Table",
   },
 
   tables: {
@@ -104,6 +105,7 @@ const UKRAINIAN = {
     addExpense: "Додати витрату",
     editIncome: "Редагувати дохід",
     editExpense: "Редагувати витрату",
+    filterTable: "Фільтрувати таблицю",
   },
 
   tables: {

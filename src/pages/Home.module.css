@@ -2,6 +2,15 @@
   padding: 1rem 2rem;
 }
 
+.button-group {
+  display: flex;
+}
+
 .button-group button {
   margin-right: 1rem;
+}
+
+.button-group button:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }

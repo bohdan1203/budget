@@ -30,6 +30,8 @@ const Home = () => {
 
   return (
     <section className={classes.home}>
+      <h1>Just a Test</h1>
+
       <div className={classes["button-group"]}>
         <Button
           textContent={textContents.buttons.newIncome}
@@ -39,6 +41,7 @@ const Home = () => {
           textContent={textContents.buttons.newExpense}
           onClick={addNewOperation.bind(null, "expenses")}
         />
+        <Button textContent={textContents.buttons.filterTable} />
       </div>
 
       <TableProvider>
